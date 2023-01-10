@@ -5,6 +5,7 @@ import './popup.css';
 import KadetLogo from './assets/images/KadetLogo.svg';
 import Setup from './components/setup/Setup';
 import CreatePassword from './components/setup/CreatePassword';
+import SecretPhrase from './components/setup/SecretPhrase';
 
 const popupRoot = ReactDOM.createRoot(document.getElementById('popup-root'))
 
@@ -18,6 +19,7 @@ function Popup() {
           <Route path='/' element={<Setup />} />
           {/* <Setup /> */}
           <Route path='/createPassword' element={<CreatePassword />} />
+          <Route path='/secretPhrase' element={<SecretPhrase />} />
 
         </Routes>
         

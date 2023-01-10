@@ -29,14 +29,14 @@ function CreatePassword() {
 
   return (
     <div className='text-center w-full flex flex-col justify-between relative h-full px-3 pt-12'>
-        <Link to="/" className='absolute h-[20px] w-[20px] top-[-20px] left-3 p-[1px] rounded-sm bg-gradient-to-r from-[#E4FC70] to-[#9AECA4]'>
+        <Link to="/" className='absolute h-[20px] w-[20px] top-[-20px] left-3 p-[1px] rounded-sm bg-gradient-to-r from-[#E4FC70] to-[#00000]'>
             <div className='bg-[#37393F] rounded-sm'>
                 <button className='text-transparent bg-clip-text bg-gradient-to-r from-[#E4FC70] to-[#9AECA4]'>&#60;</button>
             </div>
         </Link>
         <div className='flex flex-col gap-8'>
             <div className='flex flex-col'>
-                <h2 className='text-2xl text-center mb-5 font-medium'>Create a password</h2>
+                <h2 className='text-2xl text-center mb-5 font-medium'>Create a page</h2>
                 <p className='font-medium text-base'>You will use this to unlock your wallet</p>
             </div>
             <form className='flex flex-col items-center w-full text-[#F4F2EE]/[0.5] gap-4 mt-10'>
@@ -56,10 +56,11 @@ function CreatePassword() {
                         <span className={`absolute top-0 left-0 ${check ? 'bg-[#37393F] block rotate-45 transform left-[5px] top-0.5 w-[5px] h-[8px] border-2 border-t-0 border-l-0 border-[#F4F2EE] ' : 'bg-[#37393F] hidden'}  h-[20px] w-[20px] content-[""]`}></span>
                     </label>
 
-                    <label htmlFor="link-checkbox" className="ml-2">I agree to <a href="#" target="_blank" rel="noopener" className="text-[#E4FC70] underline">Terms of Service</a>
+                    <label htmlFor="link-checkbox" className="ml-2">I agree to <a href="#" target="_blank" rel="noopener" className="text-[#E4FC70] underline">Terms of notServise</a>
                     </label>
                 </div>
             </form>
+            <Link to='/secretPhrase' className='bg-gradient-to-r from-[#E4FC70] to-[#9AECA4] py-3 px-10 rounded-full text-[#37393F] font-semibold text-base'>NEXT</Link>
         </div>
         
         <button className={`${next ? activeNext : deactiveNext } py-3 px-10 rounded-full text-[#37393F] text-base`}>NEXT</button>
